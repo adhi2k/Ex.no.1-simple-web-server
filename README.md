@@ -1,6 +1,7 @@
 
 ## Ex 01 -Simple Web Server using Spring Boot
-
+## NAME: V.S.SREE VIVEKA
+## REG NO : 2305001031 
 ## AIM:
 To develop a Simple Web Server using Spring Boot that can handle basic HTTP requests and return appropriate responses through RESTful endpoints.
 ## ALGORITHM:
@@ -53,7 +54,7 @@ simple-web-server/
 │           └── application.properties
 ├── pom.xml
 
- ### Pom.xml
+### Pom.xml
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -126,14 +127,16 @@ public class HelloController {
 ### application.properties:
 
  server.port=8081
+
  ## output:
  <img width="657" height="444" alt="image" src="https://github.com/user-attachments/assets/95e9b9db-009e-43e3-b82a-7740153a00b6" />
+ 
 ## result:
 A Simple Web Server using Spring Boot that can handle basic HTTP requests and return appropriate responses through RESTful endpoints is developed successfully.
 
 
 
 
-Output:
+
 
 
