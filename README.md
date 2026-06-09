@@ -1,47 +1,30 @@
+# Ex No: 01 – Simple Web Server Using Spring Boot
 
-## Ex 01 -Simple Web Server using Spring Boot
+**Name:** Adhithya K
+**Reg No:** 2305002001
 
-## AIM:
+## AIM
+
 To develop a Simple Web Server using Spring Boot that can handle basic HTTP requests and return appropriate responses through RESTful endpoints.
-## ALGORITHM:
-Start a New Spring Boot Project:
 
-Use Spring Initializr (https://start.spring.io/)
+## ALGORITHM
 
-Select dependencies: Spring Web
+1. Create a new Spring Boot project using Spring Initializr.
+2. Add the required dependency: **Spring Web**.
+3. Create the main application class with the `@SpringBootApplication` annotation.
+4. Create a controller class using the `@RestController` annotation.
+5. Define HTTP request handler methods using annotations such as `@GetMapping`.
+6. Implement a method to handle GET requests and return a simple response.
+7. Run the Spring Boot application.
+8. Test the endpoint using a web browser or Postman.
+9. Verify the output.
+10. Stop the server after successful testing.
 
-Create the Main Application Class:
+---
 
-This class contains the main() method with @SpringBootApplication annotation to bootstrap the application.
+## PROJECT STRUCTURE
 
-Create a Controller Class:
-
-Create a class annotated with @RestController.
-
-Define one or more HTTP request handler methods using @GetMapping, @PostMapping, etc.
-
-Write Endpoint Methods:
-
-Inside the controller, define a simple method for handling GET requests (e.g., return “Hello World” when /hello is accessed).
-
-Run the Application:
-
-Run the application using your IDE or via the command line (mvn spring-boot:run or ./mvnw spring-boot:run).
-
-Test the Endpoint:
-
-Open a web browser or use Postman to visit:
-http://localhost:8080/hello
-
-You should see the output (e.g., "Hello World").
-
-Stop the Server:
-
-Stop the Spring Boot server once testing is complete.
-
-
-## Program 
-
+```text
 simple-web-server/
 ├── src/
 │   └── main/
@@ -52,13 +35,20 @@ simple-web-server/
 │       └── resources/
 │           └── application.properties
 ├── pom.xml
+```
 
- ### Pom.xml
+---
 
+## PROGRAM
+
+### pom.xml
+
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
@@ -75,7 +65,6 @@ simple-web-server/
     </parent>
 
     <dependencies>
-        <!-- Spring Boot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -90,10 +79,13 @@ simple-web-server/
             </plugin>
         </plugins>
     </build>
+
 </project>
+```
 
 ### DemoApplication.java
 
+```java
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -101,13 +93,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 }
-
+```
 
 ### HelloController.java
+
+```java
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -121,15 +116,32 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
+```
 
+### application.properties
 
-### application.properties:
+```properties
+server.port=8081
+```
 
- server.port=8081
+---
 
+## OUTPUT
 
+When the application is executed and the URL below is accessed:
 
+```text
+http://localhost:8081/hello
+```
 
-Output:
+The browser displays:
 
+```text
+Hello, Spring Boot!
+```
 
+---
+
+## RESULT
+
+Thus, a Simple Web Server using Spring Boot that can handle basic HTTP requests and return appropriate responses through RESTful endpoints was developed and executed successfully.
