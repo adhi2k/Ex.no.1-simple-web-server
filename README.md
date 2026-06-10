@@ -128,19 +128,7 @@ server.port=8081
 
 ## OUTPUT
 
-When the application is executed and the URL below is accessed:
-
-```text
-http://localhost:8081/hello
-```
-
-The browser displays:
-
-```text
-Hello, Spring Boot!
-```
-
----
+ <img width="657" height="444" alt="image" src="https://github.com/user-attachments/assets/95e9b9db-009e-43e3-b82a-7740153a00b6" />
 
 ## RESULT
 
