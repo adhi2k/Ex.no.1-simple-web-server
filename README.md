@@ -1,7 +1,7 @@
 # Ex No: 01 – Simple Web Server Using Spring Boot
 
-**Name:** Adhithya K
-**Reg No:** 2305002001
+### Name: Adhithya K
+### Reg No: 2305002001
 
 ## AIM
 
